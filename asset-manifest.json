@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/My-site/static/css/main.ecf90cac.css",
+    "main.js": "/My-site/static/js/main.0334053f.js",
+    "static/media/IMG_20220421_221813 — kopia (2).jpg": "/My-site/static/media/IMG_20220421_221813 — kopia (2).ddca98acf1f6cd905990.jpg",
+    "static/media/jeremy-bishop-G9i_plbfDgk-unsplash.jpg": "/My-site/static/media/jeremy-bishop-G9i_plbfDgk-unsplash.a38aaf98005f1677e18f.jpg",
+    "index.html": "/My-site/index.html",
+    "main.ecf90cac.css.map": "/My-site/static/css/main.ecf90cac.css.map",
+    "main.0334053f.js.map": "/My-site/static/js/main.0334053f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecf90cac.css",
+    "static/js/main.0334053f.js"
+  ]
+}
