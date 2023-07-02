@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.348);
+}
+.nav.isActive {
+  color: red;
+  background-color: red;
+}
+
+.navigation__logo {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.active {
+  font-size: 30px;
+  color: rgb(93, 145, 94);
+}
+.nav_link {
+  font-size: 30px;
+  color: rgb(88, 179, 145);
+  text-decoration: none;
+}

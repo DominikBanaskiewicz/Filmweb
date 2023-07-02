@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.app {
+  background-color: rgba(0, 0, 0, 0.348);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('./jeremy-bishop-G9i_plbfDgk-unsplash.jpg');
+  -webkit-animation: app 100s ease-in-out infinite;
+  animation: app 100s ease-in-out infinite;
+}
+@-webkit-keyframes app {
+  0% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+@keyframes app {
+  0% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+.container::backdrop {
+  background-color: rgb(17, 17, 76);
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.348);
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
+  padding-bottom: 30px;
+}
+.header__dataContainer {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  align-items: center;
+}
+.dataContainer__label {
+  color: aqua;
+  font-size: 19px;
+  padding: 20px 0px 20px 20px;
+  width: 50%;
+}
+.dataContainer__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  border-radius: 50%;
+}

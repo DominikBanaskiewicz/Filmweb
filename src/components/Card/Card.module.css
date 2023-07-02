@@ -1,0 +1,43 @@
+.card {
+  flex: 1 0 200px;
+  box-shadow: 0 1px 1rem -4px #000;
+  background: #fff;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  max-width: 200px;
+  transition: all 250ms ease-in-out;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: center;
+}
+.big {
+  width: 200px;
+  transform: scale(1.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 1rem -4px #000;
+  transform: scale(1.2);
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 625px) {
+  .container {
+    width: 100%;
+  }
+
+  .cards-container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    margin: 0.5rem;
+  }
+}

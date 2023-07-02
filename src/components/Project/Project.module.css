@@ -1,0 +1,27 @@
+.ProjectCard {
+  border: 2px red solid;
+  border-radius: 10%;
+  background-color: aliceblue;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.ProjectCard__Name {
+  font-size: larger;
+  font-weight: 600;
+}
+.ProjectCard__Link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+.ProjectCard__Link:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+}

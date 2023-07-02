@@ -1,0 +1,11 @@
+.project__container {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+.abc {
+  max-width: 1200px;
+  width: 80%;
+}
