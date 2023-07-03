@@ -1,5 +1,4 @@
 .project__container {
-  margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -8,4 +7,8 @@
 .abc {
   max-width: 1200px;
   width: 80%;
+}
+.project__header {
+  color: white;
+  font-size: xx-large;
 }

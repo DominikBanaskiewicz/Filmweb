@@ -9,16 +9,40 @@
   transition: all 1s ease-in-out;
   overflow: hidden;
 }
+.close_btn {
+  position: relative;
+  top: 5%;
+  width: 10%;
+  height: 5%;
+  font-size: large;
+}
 
 .modal_content {
   width: 70%;
   height: 70%;
   background-color: #dce1ec;
-  color: #6e1010;
+  color: #8d4d4d;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  font-size: 2rem;
+  flex-direction: row;
+  font-size: 1rem;
   transition: all 1s ease-in-out;
+}
+.modal_image {
+  border: 1px solid red;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal_label {
+  border: 1px solid red;
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

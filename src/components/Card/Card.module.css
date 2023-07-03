@@ -1,6 +1,6 @@
 .card {
   flex: 1 0 200px;
-  box-shadow: 0 1px 1rem -4px #000;
+  border: none;
   background: #fff;
   margin: 1rem;
   overflow: hidden;
@@ -11,7 +11,7 @@
 }
 .card img {
   width: 200px;
-  height: 200px;
+  height: 220px;
   object-fit: center;
 }
 .big {
@@ -25,7 +25,8 @@
 }
 
 .card__content {
-  padding: 1rem;
+  text-align: center;
+  font-size: small;
 }
 
 @media screen and (max-width: 625px) {
@@ -40,4 +41,7 @@
   .card {
     margin: 0.5rem;
   }
+}
+.card__image {
+  background-color: #000;
 }

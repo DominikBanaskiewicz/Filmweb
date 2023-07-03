@@ -12,18 +12,11 @@ export const projectsDatas = [
   },
   {
     id: nanoid(),
-    name: 'phonebook',
+    name: 'Phonebook',
     url: 'https://github.com/DominikBanaskiewicz/goit-react-hw-08-phonebook',
     demo_url:
       'https://dominikbanaskiewicz.github.io/goit-react-hw-08-phonebook/',
-    technologies: [
-      'javascript',
-      'react',
-      'redux',
-      'rest api',
-      'css.module',
-      'react router',
-    ],
+    technologies: ['javascript', 'react', 'redux', 'rest api', 'react router'],
     descriptin:
       'The final alone project in react and redux. So the app state is in redux, we can login/register and keep our own contacts. We use rest api to login/logout and keep out contact list',
   },
@@ -38,7 +31,7 @@ export const projectsDatas = [
   },
   {
     id: nanoid(),
-    name: 'Mongose, node.js',
+    name: 'SIMPLE REST API Mongose, node.js',
     url: 'https://github.com/DominikBanaskiewicz/hw03-mongodb-1',
     demo_url: 'https://github.com/DominikBanaskiewicz/hw03-mongodb-1',
     technologies: ['MongDB', 'Express', 'npm', 'mongoose', 'morgan'],
