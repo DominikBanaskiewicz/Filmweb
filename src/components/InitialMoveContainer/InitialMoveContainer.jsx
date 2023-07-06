@@ -9,6 +9,7 @@ export const InitialMoveContainer = ({ element, isInViewCheck }) => {
       mainControls.start('visible');
     }
     console.log(isInViewCheck);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInViewCheck]);
   return (
     <motion.div
