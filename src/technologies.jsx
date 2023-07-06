@@ -9,7 +9,7 @@ export const cardsData = [
     id: 2,
     title: 'JAVA SCRIPT',
     imgUrl:
-      'https://www.seekpng.com/png/full/80-803501_javascript-logo-logo-de-java-script-png.png',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
   },
   {
     id: 3,

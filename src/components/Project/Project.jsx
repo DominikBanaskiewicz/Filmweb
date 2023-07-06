@@ -13,6 +13,17 @@ export const Project = ({ name, url, technologies }) => {
     setIsHovering(false);
   };
 
+  const closeOnClick = e => {
+    if (e.target.id === 'backdrop') {
+      setIsOpen(false);
+      document.body.removeEventListener('mousedown', closeOnClick);
+    }
+  };
+  const handleMouseClickWhenModalOpen = () => {
+    setIsOpen(true);
+    document.body.addEventListener('mousedown', closeOnClick);
+  };
+
   return (
     <>
       <div
@@ -46,7 +57,7 @@ export const Project = ({ name, url, technologies }) => {
           className={css.ProjectCard_MoreBtn}
           onClick={e => {
             e.preventDefault();
-            setIsOpen(true);
+            handleMouseClickWhenModalOpen();
           }}
         >
           View More About it

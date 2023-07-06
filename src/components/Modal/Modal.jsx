@@ -9,6 +9,7 @@ const Modal = ({ projectname, isOpen, handleClose }) => {
     const closeOnEscapeKey = e => (e.key === 'Escape' ? handleClose() : null);
 
     document.body.addEventListener('keydown', closeOnEscapeKey);
+
     return () => {
       document.body.removeEventListener('keydown', closeOnEscapeKey);
     };
@@ -20,7 +21,7 @@ const Modal = ({ projectname, isOpen, handleClose }) => {
 
   return (
     <ReactPortal wrapperId="root">
-      <div className={css.modal}>
+      <div className={css.modal} id="backdrop">
         <button onClick={handleClose} className={css.close_btn}>
           Close it
         </button>

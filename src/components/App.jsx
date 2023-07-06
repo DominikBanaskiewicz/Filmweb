@@ -10,7 +10,7 @@ import { Technologies } from './Technologies/Technologies';
 export const App = () => {
   return (
     <Suspense>
-      <div id="react-portal-modal-container" className={css.app}>
+      <div id="react-portal-modal-container" className={[css.app]}>
         <Navigation></Navigation>
         <Header></Header>
         <ContactMe></ContactMe>

@@ -4,8 +4,9 @@
   justify-content: center;
   max-width: 1200px;
   width: 80%;
+  min-height: 50vh;
 }
 .Technologies_header {
   color: white;
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
