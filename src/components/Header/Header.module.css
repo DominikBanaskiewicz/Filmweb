@@ -36,6 +36,9 @@
 
   width: 60%;
 }
+.header__dataContainer_name {
+  margin-top: 0;
+}
 .dataContainer__img {
   position: relative;
   top: 20%;
