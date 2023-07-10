@@ -3,7 +3,7 @@ import { ReactPortal } from 'components/Portal/Portal';
 import { projectsDatas } from 'data';
 import css from './Modal.module.css';
 
-const Modal = ({ projectname, isOpen, handleClose }) => {
+const Modal = ({ projectname, isOpen, handleClose, imageUrl }) => {
   const projectsData = projectsDatas;
   useEffect(() => {
     const closeOnEscapeKey = e => (e.key === 'Escape' ? handleClose() : null);
@@ -18,6 +18,7 @@ const Modal = ({ projectname, isOpen, handleClose }) => {
   if (!isOpen) return null;
 
   const result = projectsData.filter(elem => elem.name === projectname)[0];
+  console.log(imageUrl);
 
   return (
     <ReactPortal wrapperId="root">
@@ -29,8 +30,9 @@ const Modal = ({ projectname, isOpen, handleClose }) => {
         <div className={css.modal_content}>
           <div className={css.modal_image}>
             <img
-              src="https://olivernorden.se/assets/Uploads/on__ScaleMaxWidthWzEyMDBd.png"
-              alt=""
+              className={css.modal__image_2}
+              src={imageUrl}
+              alt={`${imageUrl}`}
             />
           </div>
           <div className={css.modal_label}>

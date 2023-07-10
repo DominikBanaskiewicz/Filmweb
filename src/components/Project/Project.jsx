@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'components/Modal/Modal';
 import css from './Project.module.css';
 
-export const Project = ({ name, url, technologies }) => {
+export const Project = ({ name, url, technologies, imageUrl }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const handleMouseOver = () => {
@@ -67,6 +67,7 @@ export const Project = ({ name, url, technologies }) => {
           handleClose={() => setIsOpen(false)}
           projectname={name}
           isOpen={isOpen}
+          imageUrl={imageUrl}
         ></Modal>
       </div>
     </>

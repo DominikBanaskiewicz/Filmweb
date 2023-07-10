@@ -17,6 +17,7 @@ export const AboutMe = () => {
                 name={project.name}
                 url={project.url}
                 technologies={project.technologies}
+                imageUrl={project.imageUrl}
               ></Project>
             </div>
           ))}
