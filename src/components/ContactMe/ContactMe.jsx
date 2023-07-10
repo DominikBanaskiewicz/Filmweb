@@ -20,7 +20,7 @@ export const ContactMe = () => {
     <div ref={ref} className={css.ContactMe__container}>
       <motion.div
         className={css.Contact_Me__motion_container}
-        isInView="onscreen"
+        whileInView="onscreen"
         variants={{
           hidden: { opacity: 0, x: 300 },
           visible: { opacity: 1, x: 0 },
