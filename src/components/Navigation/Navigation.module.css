@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.348);
-  padding-top: 2%;
+  padding-top: 1%;
 }
 .nav.isActive {
   color: red;
