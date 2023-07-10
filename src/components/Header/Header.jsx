@@ -34,7 +34,9 @@ export const Header = () => {
             transition={{ duration: 1, delay: 0.1 }}
           >
             <Element name="aboutMe">
-              <h2>Dominik Banaśkiewicz</h2>
+              <h2 className={css.header__dataContainer_name}>
+                Dominik Banaśkiewicz
+              </h2>
             </Element>
             <h3> Frontend developer</h3>
             <p>

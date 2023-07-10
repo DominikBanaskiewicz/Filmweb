@@ -34,8 +34,10 @@
   color: aqua;
   min-width: 350px;
 
-  padding: 20px 0px 20px 20px;
   width: 60%;
+}
+.header__dataContainer_name {
+  margin-top: 0;
 }
 .dataContainer__img {
   position: relative;
