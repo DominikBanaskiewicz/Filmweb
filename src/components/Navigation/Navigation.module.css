@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.348);
+  padding-top: 2%;
 }
 .nav.isActive {
   color: red;
@@ -13,15 +14,66 @@
 
 .navigation__logo {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2em;
+  height: 60px;
+  background: #1aab8a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.active {
-  font-size: 30px;
-  color: rgb(93, 145, 94);
-}
-.nav_link {
-  font-size: 30px;
-  color: rgb(88, 179, 145);
+.nav_link,
+.cv_down__btn {
+  border-radius: 5px;
+  width: 14%;
+  background: #1aab8a;
+  color: #fff;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.4em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
   text-decoration: none;
+}
+.nav_link:hover,
+.navigation__logo:hover,
+.cv_down__btn:hover {
+  background: #fff;
+  color: #1aab8a;
+}
+.nav_link:before,
+.nav_link:after,
+.navigation__logo:before,
+.navigation__logo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+.nav_link:after .navigation__logo:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.nav_link:hover:before,
+.nav_link:hover:after,
+.navigation__logo:hover:before,
+.navigation__logo:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
