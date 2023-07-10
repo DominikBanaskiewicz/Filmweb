@@ -38,7 +38,7 @@ export const Technologies = () => {
           <div key={index}>
             <motion.div
               className={css.dataContainer__label}
-              isinview="onscreen"
+              whileInView="onscreen"
               variants={{
                 hidden: { opacity: 0, x: 300 },
                 visible: {

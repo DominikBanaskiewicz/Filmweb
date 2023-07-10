@@ -19,7 +19,7 @@
   margin-right: auto;
   font-size: 1rem;
 
-  height: 85vh;
+  height: 80vh;
 }
 .header__dataContainer {
   display: flex;
@@ -34,7 +34,6 @@
   color: aqua;
   min-width: 350px;
 
-  padding: 20px 0px 20px 20px;
   width: 60%;
 }
 .dataContainer__img {
