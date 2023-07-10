@@ -3,6 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import css from '../Header/Header.module.css';
 import { useInView } from 'framer-motion';
+import { Element } from 'react-scroll';
 
 export const Header = () => {
   const mainControls = useAnimation();
@@ -32,7 +33,9 @@ export const Header = () => {
             animate={mainControls}
             transition={{ duration: 1, delay: 0.1 }}
           >
-            <h2>Dominik Banaśkiewicz</h2>
+            <Element name="aboutMe">
+              <h2>Dominik Banaśkiewicz</h2>
+            </Element>
             <h3> Frontend developer</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum

@@ -1,11 +1,11 @@
 import { Navigation } from './Navigation/Navigation';
 import { AboutMe } from './AboutMe/AboutMe';
 import { Suspense } from 'react';
-import { Routes } from 'react-router-dom';
 import { Header } from './Header/Header';
-import css from './Header/Header.module.css';
+import css from './App.module.css';
 import { ContactMe } from './ContactMe/ContactMe';
 import { Technologies } from './Technologies/Technologies';
+import { Element } from 'react-scroll';
 
 export const App = () => {
   return (
@@ -13,15 +13,16 @@ export const App = () => {
       <div id="react-portal-modal-container" className={[css.app]}>
         <Navigation></Navigation>
         <Header></Header>
-        <ContactMe></ContactMe>
-        <Technologies></Technologies>
-        <AboutMe></AboutMe>
+        <Element className={css.AppElement__Container}>
+          <ContactMe></ContactMe>
+        </Element>
 
-        <Routes>
-          {/* <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/aboutMe" element={<AboutMe />} /> */}
-        </Routes>
+        <Element className={css.AppElement__Container} name="technologies">
+          <Technologies></Technologies>
+        </Element>
+        <Element className={css.AppElement__Container} name="my-projects">
+          <AboutMe></AboutMe>
+        </Element>
       </div>
     </Suspense>
   );
