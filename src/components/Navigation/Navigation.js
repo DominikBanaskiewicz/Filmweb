@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import css from '../Navigation/Navigation.module.css';
+import css from '../Navigation/Navigation.module.scss';
 
 import { scroller } from 'react-scroll';
 
