@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Technologies.module.scss';
 import { Card } from 'components/Card/Card';
 import { cardsData } from 'technologies';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 
 export const Technologies = () => {
   const [count, setCount] = useState(2);
