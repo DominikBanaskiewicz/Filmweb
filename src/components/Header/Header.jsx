@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import css from '../Header/Header.module.css';
+import css from '../Header/Header.module.scss';
 import { useInView } from 'framer-motion';
 import { Element } from 'react-scroll';
+import { Navigation } from 'components/Navigation/Navigation';
+import { ContactMe } from 'components/ContactMe/ContactMe';
 
 export const Header = () => {
   const mainControls = useAnimation();
@@ -14,15 +16,14 @@ export const Header = () => {
     if (isInView) {
       mainControls.start('visible');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView]);
 
   return (
     <div ref={ref} className={css.header}>
-      <div className={css.container}>
+      <div className={css.header__container}>
+        <Navigation className={css.header__navigation}></Navigation>
         <div className={css.header__dataContainer}>
           <motion.div
-            key={1}
             className={css.dataContainer__label}
             whileInView="onscreen"
             variants={{
@@ -62,11 +63,12 @@ export const Header = () => {
           >
             <img
               className={css.dataContainer__img}
-              src={require('../../images/IMG_20220421_221813 — kopia (2).jpg')}
+              src={require('../../images/IMG_20220421_221813 — kopia (2).png')}
               alt="Dominik Banaskiewicz"
             />
           </motion.div>
         </div>
+        <ContactMe></ContactMe>
       </div>
     </div>
   );

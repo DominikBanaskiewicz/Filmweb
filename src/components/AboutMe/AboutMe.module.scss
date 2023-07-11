@@ -2,12 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  column-gap: 2px;
   max-width: 1200px;
+  height: 50vh;
 }
-.abc {
-  max-width: 1200px;
-  width: 80%;
-}
+
 .project__header {
   color: white;
   font-size: xx-large;
