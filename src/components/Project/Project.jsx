@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'components/Modal/Modal';
-import css from './Project.module.css';
+import css from './Project.module.scss';
 
 export const Project = ({ name, url, technologies, imageUrl }) => {
   const [isOpen, setIsOpen] = useState(false);

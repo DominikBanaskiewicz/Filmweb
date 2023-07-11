@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Project } from 'components/Project/Project';
-import css from './AboutMe.module.css';
+import css from './AboutMe.module.scss';
 import { projectsDatas } from 'data';
 
 export const AboutMe = () => {

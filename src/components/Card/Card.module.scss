@@ -1,18 +1,17 @@
 .card {
   flex: 1 0 200px;
   border: none;
-  background: #fff;
   margin: 1rem;
   overflow: hidden;
   border-radius: 6px;
   cursor: pointer;
   max-width: 200px;
   transition: all 250ms ease-in-out;
+  margin: 20px;
 }
 .card img {
   width: 200px;
   height: 220px;
-  object-fit: center;
 }
 .big {
   width: 200px;
@@ -20,15 +19,24 @@
 }
 
 .card:hover {
-  box-shadow: 0 4px 1rem -4px #000;
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .card__content {
   text-align: center;
   font-size: small;
+  margin: 0;
+  background-color: aliceblue;
+  align-items: center;
 }
-
+.card__content_title {
+  font-size: 22px;
+  height: clamp(30px, 3vw, 30px);
+}
+.dataContainer__label {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 625px) {
   .container {
     width: 100%;

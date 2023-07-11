@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { ReactPortal } from 'components/Portal/Portal';
 import { projectsDatas } from 'data';
-import css from './Modal.module.css';
+import css from './Modal.module.scss';
 
 const Modal = ({ projectname, isOpen, handleClose, imageUrl }) => {
   const projectsData = projectsDatas;

@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__container {
+    background-color: rgba(0, 0, 0, 0.348);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    height: 100vh;
+  }
+  &__dataContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+  }
+}
+
+.container::backdrop {
+  background-color: rgb(17, 17, 76);
+}
+
+.dataContainer__label {
+  font-size: clamp(16px, 1.8vw, 22px);
+  color: aqua;
+  min-width: 350px;
+  width: 60%;
+}
+.header__dataContainer_name {
+  margin-top: 0;
+}
+.dataContainer__img {
+  scale: 1;
+}

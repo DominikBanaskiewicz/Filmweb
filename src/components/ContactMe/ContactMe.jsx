@@ -1,4 +1,4 @@
-import css from './ConstactMe.module.css';
+import css from './ConstactMe.module.scss';
 import { useInView } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
