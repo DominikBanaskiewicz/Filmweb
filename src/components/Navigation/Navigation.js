@@ -8,7 +8,7 @@ export const Navigation = () => {
   const scrolto = element => {
     scroller.scrollTo(`${element}`, {
       smooth: true,
-      offset: -70,
+
       duration: 500,
     });
   };

@@ -1,9 +1,9 @@
 import css from './Card.module.scss';
-import { useInView } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 import { useRef, useEffect } from 'react';
+import { useInView } from 'framer-motion';
 
-export const Card = ({ id, isBig, index, imgUrl, alt, title }) => {
+export const Card = ({ id, isBig, imgUrl, alt, title, index }) => {
   const getStyles = (id, id2) => {
     if (id === id2) return `${css.card} ${css.big}`;
     return `${css.card}`;
@@ -13,35 +13,27 @@ export const Card = ({ id, isBig, index, imgUrl, alt, title }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  const getTime = elemIndex => elemIndex * 0.2;
+
   useEffect(() => {
     if (isInView) {
       mainControls.start('visible');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView]);
-  const left = {
-    hidden: { opacity: 0, x: -700 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1, delay: 0.3 },
-    },
-  };
-  const right = {
-    hidden: { opacity: 0, x: 300 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1, delay: 0.3 },
-    },
-  };
-
   return (
-    <div ref={ref} id={id} className={getStyles(isBig, id)}>
+    <div ref={ref} className={getStyles(isBig, id)}>
       <motion.div
         className={css.dataContainer__label}
         whileInView="onscreen"
-        variants={index % 2 === 0 ? left : right}
+        variants={{
+          hidden: { opacity: 0, x: -700 },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.5, delay: getTime(index) },
+          },
+        }}
         initial="hidden"
         animate={mainControls}
       >
