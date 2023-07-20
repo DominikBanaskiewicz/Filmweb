@@ -4,7 +4,9 @@
   margin-left: auto;
 
   &__container {
-    background-color: rgba(0, 0, 0, 0.348);
+    background: url('../../images/back4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,19 +25,22 @@
   }
 }
 
-.container::backdrop {
-  background-color: rgb(17, 17, 76);
-}
-
 .dataContainer__label {
-  font-size: clamp(16px, 1.8vw, 22px);
-  color: aqua;
+  font-size: clamp(16px, 1.8vw, 28px);
+  color: rgb(244, 244, 244);
   min-width: 350px;
-  width: 60%;
+  width: 70%;
+  padding: 10%;
+}
+.dataContainer__imgContainer {
+  width: 30%;
 }
 .header__dataContainer_name {
   margin-top: 0;
 }
 .dataContainer__img {
-  scale: 1;
+  width: 70%;
+  border-radius: 50%;
+  position: relative;
+  scale: 1.4;
 }

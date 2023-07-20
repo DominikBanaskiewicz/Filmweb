@@ -5,7 +5,7 @@ import { cardsData } from 'technologies';
 import { useState } from 'react';
 
 export const Technologies = () => {
-  const [count, setCount] = useState(2);
+  const [count, setCount] = useState(0);
   setTimeout(function () {
     setCount(count + 1);
   }, 1500);
