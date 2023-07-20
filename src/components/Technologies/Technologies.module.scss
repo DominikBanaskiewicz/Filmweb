@@ -1,5 +1,8 @@
 .Technologies__container {
-  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 50vh;
 }
 .Technologies_header {
   color: white;

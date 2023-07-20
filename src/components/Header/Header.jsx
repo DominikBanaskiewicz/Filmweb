@@ -51,8 +51,8 @@ export const Header = () => {
           </motion.div>
 
           <motion.div
+            className={css.dataContainer__imgContainer}
             key={2}
-            className={css.dataContainer__img}
             whileInView="onscreen"
             variants={{
               hidden: { opacity: 0, x: 200 },
@@ -64,7 +64,7 @@ export const Header = () => {
           >
             <img
               className={css.dataContainer__img}
-              src={require('../../images/IMG_20220421_221813 — kopia (2).png')}
+              src={require('../../images/IMG_20220421_221813 — kopia (2).jpg')}
               alt="Dominik Banaskiewicz"
             />
           </motion.div>
