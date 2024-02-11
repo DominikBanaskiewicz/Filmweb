@@ -4,7 +4,7 @@ export const projectsDatas = [
   {
     id: nanoid(),
     name: 'Movies Details',
-    url: 'https://github.com/DominikBanaskiewicz/goit-react-hw-05-movies',
+    url: 'https://github.com/DominikBanaskiewicz/goit-react-hw-05-moviesssss',
     demo_url: 'https://dominikbanaskiewicz.github.io/goit-react-hw-05-movies/',
     technologies: ['javascript', 'react', 'restApi', 'reactRouter'],
     descriptin:
